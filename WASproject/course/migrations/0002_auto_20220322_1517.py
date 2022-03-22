@@ -7,7 +7,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('WASapp', '0001_initial'),
+        ('course', '0001_initial'),
     ]
 
     operations = [

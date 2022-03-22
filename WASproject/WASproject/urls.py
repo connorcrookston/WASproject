@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from WASapp import views
+from course import views
 
 urlpatterns = [
     path('', views.course, name='course'),
-    path('WASapp/', include('WASapp.urls')),
+    path('course/', include('course.urls')),
     path('admin/', admin.site.urls),
 ]

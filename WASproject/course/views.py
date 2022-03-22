@@ -11,4 +11,4 @@ def course(request):
     context_dict = {}
     context_dict['courses'] = course_list
 
-    return render(request, 'WASapp/course.html', context=context_dict)
+    return render(request, 'course/course.html', context=context_dict)

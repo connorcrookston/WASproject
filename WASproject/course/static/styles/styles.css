@@ -3,4 +3,12 @@
 }
 body {
     background-color: yellow;
+    font-family:sans-serif;
+}
+h1 {
+    text-decoration:underline;
+    text-transform:capitalize;
+}
+p {
+    font-style:italic;
 }

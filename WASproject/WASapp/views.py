@@ -6,7 +6,7 @@ from .models import Courses
 
 
 def course(request):
-    course_list = Courses.objects.order_by('-startDate')
+    course_list = Courses.objects.order_by('startDate')
 
     context_dict = {}
     context_dict['courses'] = course_list

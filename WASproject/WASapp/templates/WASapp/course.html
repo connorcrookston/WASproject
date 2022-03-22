@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GA Courses</title>
+    <style>
+        .course_list {
+            padding-left: 50px;
+        }
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    The list of courses provided by the GA program:
+    <div class="course_list">
+        {% if courses %}
+            {% for course in courses %}
+            <h1>{{ course.title }}</h1>
+            <h3>Starting Date: {{ course.startDate }}</h3>
+            <p>{{ course.description }}</p>
+            {% endfor %}
+        {% else %}
+            </br><strong>There are no courses present!</strong>
+        {% endif %}
+    </div>
+</body>
+</html>
